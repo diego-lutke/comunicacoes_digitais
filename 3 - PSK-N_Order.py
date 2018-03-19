@@ -4,6 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import random as rd
+import itertools as it
 
 n = raw_input("Quantos símbolos você deseja?\n")
 check2 = False
@@ -40,3 +41,18 @@ while (check2 <> True):
     else:
         print('Sua resposta não foi compreendida. Tente novamente!')
         check2 = False
+
+Fs = 150.0
+Ts = 1.0/Fs
+t = np.arange(0,1.,Ts)
+ff = 5
+
+s = []
+z = []
+tn = np.arange(0,len(dlist)*1.,Ts)
+
+compar = list(it.product([0, 1], repeat=int(n)))
+
+for x in dlist:
+    for y in compar:
+

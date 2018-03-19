@@ -44,7 +44,6 @@ z = []
 tn = np.arange(0,len(dlist)*1.,Ts)
 
 for x in dlist:
-    print(x)
     if x=='00':
         for y in t:
             z.append(0)
