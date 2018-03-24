@@ -68,7 +68,6 @@ while k < nfases:
 compar = list(it.product([0, 1], repeat=n))
 comparjoin = list(it.chain.from_iterable(compar))
 
-mix = []
 k = n
 for pp in fasesl:
     comparjoin.insert(k,pp)
